@@ -43,6 +43,10 @@ router.post(
     user.password = await bcrypt.hash(password, salt);
 
     try {
+      // Check if user already exist
+      const checkUser = await User.findOne({ email }).select({ password: 0 });
+      if (checkUser) return res.status(400).json({ msg: "User already exist" });
+
       // Add User in Database
       await user.save();
 
