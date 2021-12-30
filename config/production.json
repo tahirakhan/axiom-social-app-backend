@@ -1,4 +1,4 @@
 {
-    "mongoURI": "mongodb+srv://innovationhub:innovationhub@cluster0.l8f85.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+    "mongoURI": "mongodb+srv://<username>:<password>@cluster0.l8f85.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
     "jwtSecret": "axiom-jwt-secret"
 }
